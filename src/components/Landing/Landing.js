@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
+import { Close } from '@mui/icons-material';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 
