@@ -17,6 +17,16 @@
     margin: 1rem;
 }
 
+/* 
+.blog--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+ */
+
 
 .blog--header h1 {
     margin-bottom: 40px;
