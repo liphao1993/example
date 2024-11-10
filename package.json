@@ -51,5 +51,8 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  }
 }
