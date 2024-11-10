@@ -6,6 +6,7 @@
     "node": "16.x"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^6.1.6",
     "@mui/material": "^6.1.6",
     "@testing-library/jest-dom": "^5.11.4",
