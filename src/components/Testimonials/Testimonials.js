@@ -2,10 +2,10 @@ import React, { useContext, useRef } from 'react';
 
 import Slider from 'react-slick';
 
-import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaQuoteLeft, FaArrowRight, FaArrowLeft, FaHtml5 } from 'react-icons/fa';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { testimonialsData } from '../../data/testimonialsData';
+import { experienceData } from '../../data/experienceData';
 
 import './Testimonials.css';
 
@@ -40,25 +40,20 @@ function Testimonials() {
 
     return (
         <>
-            {testimonialsData.length > 0 && (
+            {experienceData.length > 0 && (
                 <div
                     className='testimonials'
-                    style={{ backgroundColor: theme.primary }}
+                    id='testimonials'
+                    style={{ backgroundColor: theme.tertiary10 }}
                 >
-                    <div className='testimonials--header'>
-                        <h1 style={{ color: theme.secondary }}>Testimonials</h1>
-                    </div>
                     <div className='testimonials--body'>
-                        <FaQuoteLeft
-                            className='quote'
-                            style={{ color: theme.secondary }}
-                        />
+                    <h1 style={{ color: theme.primary }}>Experience</h1>
                         <div
                             className='testimonials--slider'
-                            style={{ backgroundColor: theme.primary }}
+                            style={{ backgroundColor: theme.tertiary10 }}
                         >
                             <Slider {...settings} ref={sliderRef}>
-                                {testimonialsData.map((test) => (
+                                {experienceData.map((test) => (
                                     <div
                                         className='single--testimony'
                                         key={test.id}
@@ -69,24 +64,29 @@ function Testimonials() {
                                                 style={{
                                                     backgroundColor:
                                                         theme.secondary,
+                                                    boxShadow: `0px 0px 50px ${theme.primary30}`
                                                 }}
                                             >
                                                 <img
                                                     src={test.image}
-                                                    alt={test.name}
+                                                    alt={test.company}
                                                 />
                                             </div>
                                             <div
                                                 className='review--content'
                                                 style={{
-                                                    backgroundColor:
-                                                        theme.secondary,
+                                                    backgroundColor: theme.secondary,
                                                     color: theme.tertiary,
-                                                }}
+                                                    boxShadow: `0px 0px 30px ${theme.primary30}`
+                                                  }}
                                             >
-                                                <p>{test.text}</p>
-                                                <h1>{test.name}</h1>
-                                                <h4>{test.title}</h4>
+                                                <h4>{test.jobtitle}</h4>
+                                                <h1>{test.startYear} - {test.endYear}</h1>
+                                                {test.description.map((line, index) => (
+                                                <h5 key={index}>
+                                                    • {line}
+                                                </h5>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
@@ -95,20 +95,26 @@ function Testimonials() {
                             <button
                                 className='prevBtn'
                                 onClick={gotoPrev}
-                                style={{ backgroundColor: theme.secondary }}
+                                style={{ 
+                                    backgroundColor: theme.tertiary,
+                                    boxShadow: '0px 0px 20px white'
+                                }}
                             >
                                 <FaArrowLeft
-                                    style={{ color: theme.primary }}
+                                    style={{ color: theme.tertiary10 }}
                                     aria-label='Previous testimonial'
                                 />
                             </button>
                             <button
                                 className='nextBtn'
                                 onClick={gotoNext}
-                                style={{ backgroundColor: theme.secondary }}
+                                style={{ 
+                                    backgroundColor: theme.tertiary, 
+                                    boxShadow: '0px 0px 20px white'
+                                }}
                             >
                                 <FaArrowRight
-                                    style={{ color: theme.primary }}
+                                    style={{ color: theme.tertiary10 }}
                                     aria-label='Next testimonial'
                                 />
                             </button>

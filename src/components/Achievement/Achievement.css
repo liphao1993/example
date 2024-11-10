@@ -1,6 +1,5 @@
 .achievement {
     min-height: 100vh;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -8,7 +7,6 @@
 }
 
 .achievement-body {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -236,3 +234,14 @@
 
 }
 
+.skill--scroll {
+    width: 100%; /* Ensures skill section takes full width */
+    margin: 0 2rem; /* Optional: Adjust margins if necessary */
+  }
+
+  .skill--box {
+    width: 300px;
+    height: 250px;
+    margin: 1.5rem;  /* Adjust spacing between items */
+    padding: 2rem 1rem;
+}

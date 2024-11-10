@@ -187,7 +187,7 @@ yarn start
 │   │   │   └── Bestermind
 │   │   │       └── BestermindRegular.ttf
 │   │   ├── pdf
-│   │   │   └── resume.pdf
+│   │   │   └── LIEUYEUHUEY_RESUME.pdf
 │   │   └── svg
 │   │       ├── about
 │   │       ├── contacts

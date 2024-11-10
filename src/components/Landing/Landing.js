@@ -161,13 +161,14 @@ function Landing() {
                     >
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}</p>
+                        <h6>{headerData.nationality}</h6>
+                        <p style={{ textAlign: 'justify' }}>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
-                                    download='resume'
+                                    download='LIEUYEUHUEY_RESUNE'
                                     target='_blank'
                                     rel='noreferrer'
                                 >

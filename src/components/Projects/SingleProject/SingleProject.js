@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaPlay, FaCode } from 'react-icons/fa';
+import { FaPlay, FaGithub } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 
 import placeholder from '../../../assets/png/placeholder.png';
@@ -15,6 +15,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             width: 40,
             height: 40,
             borderRadius: 50,
+            boxShadow: `0 0 10px white `,
             border: `2px solid ${theme.tertiary}`,
             color: theme.tertiary,
             transition: 'all 0.2s',
@@ -39,7 +40,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             <div
                 key={id}
                 className='singleProject'
-                style={{ backgroundColor: theme.primary400 }}
+                style={{ backgroundColor: theme.primary400 ,boxShadow: '4px 4px 20px rgba(84, 95, 196, 0.3)',}}
             >
                 <div className='projectContent'>
                     <h2
@@ -50,7 +51,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                     </h2>
                     <img src={image ? image : placeholder} alt={name} />
                     <div className='project--showcaseBtn'>
-                        <a
+                        {/* <a
                             href={demo}
                             target='_blank'
                             rel='noreferrer'
@@ -68,7 +69,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                                 className={classes.icon}
                                 aria-label='Demo'
                             />
-                        </a>
+                        </a> */}
                         <a
                             href={code}
                             target='_blank'
@@ -80,7 +81,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                                 .replace(' ', '-')
                                 .toLowerCase()}-code`}
                         >
-                            <FaCode
+                            <FaGithub
                                 id={`${name
                                     .replace(' ', '-')
                                     .toLowerCase()}-code`}

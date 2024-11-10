@@ -1,9 +1,11 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/LIEUYEUHUEY_RESUME.pdf'
+import profile_pic from '../assets/png/profile_pic.JPG'
 
 export const headerData = {
-    name: 'Sreerag Rajan',
-    title: "Web Developer",
-    desciption:"Life may be a meandering path but don't worry about it, rather enjoy it. It is about the journey, not the destination so explore all that comes your way, learn and grow from it, for this journey only happens once.",
-    image: 'https://avatars.githubusercontent.com/u/85482640?v=4',
+    name: 'Lieu Yeu Huey',
+    title: "Software Engineer",
+    nationality: "Malaysian | Singapore PR",
+    desciption:"A passionate software developer skilled in both frontend and backend, driven by a curiosity for how technology can transform and enrich lives. Focused on building user-centric, scalable applications that solve real-world problems.",
+    image: profile_pic,
     resumePdf: resume
 }

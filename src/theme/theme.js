@@ -93,11 +93,10 @@ export const bwThemeDark = {
     expimg: expBlack,
     contactsimg: contactsBlack
 }
-
 export const blueThemeLight = {
     type: 'light',
-    primary: '#545fc4',
-    primary400: '#6e76c7',
+    primary: '#a15c38',
+    primary400: '#f7f1f0',
     primary600: '#3644c9',
     primary80: '#545fc4cc',
     primary50: '#545fc480',
@@ -105,7 +104,7 @@ export const blueThemeLight = {
     secondary: '#eaeaea',
     secondary70: '#eaeaeab3',
     secondary50: '#eaeaea80',
-    tertiary: '#212121',
+    tertiary: '#a15c38',
     tertiary80: '#212121cc',
     tertiary70: '#212121b3',
     tertiary50: '#21212180',
@@ -115,10 +114,31 @@ export const blueThemeLight = {
     expimg: expBlue,
     contactsimg: contactsBlue
 }
+// export const blueThemeLight = {
+//     type: 'light',
+//     primary: '#ffffff',
+//     primary400: '#6e76c7',
+//     primary600: '#3644c9',
+//     primary80: '#545fc4cc',
+//     primary50: '#545fc480',
+//     primary30: '#545fc44d',
+//     secondary: '#212121',
+//     secondary70: '#eaeaeab3',
+//     secondary50: '#eaeaea80',
+//     tertiary: '#ffffff',
+//     tertiary80: '#212121cc',
+//     tertiary70: '#212121b3',
+//     tertiary50: '#21212180',
+//     aboutimg1: blueThemeboy,
+//     aboutimg2: blueThemegirl,
+//     eduimg: eduBlue,
+//     expimg: expBlue,
+//     contactsimg: contactsBlue
+// }
 export const blueThemeDark = {
     type: 'dark',
-    primary: '#545fc4',
-    primary400: '#6e76c7',
+    primary: '#ffffff',
+    primary400: '##a1caf1',
     primary600: '#3644c9',
     primary80: '#545fc4cc',
     primary50: '#545fc480',
@@ -126,7 +146,9 @@ export const blueThemeDark = {
     secondary: '#212121',
     secondary70: '#212121b3',
     secondary50: '#21212180',
-    tertiary: '#eaeaea',
+    tertiary: '#ffffff',
+    tertiary10: '#212121',
+    tertiary20: '#ffffff',
     tertiary80: '#eaeaeacc',
     tertiary70: '#eaeaeab3',
     tertiary50: '#eaeaea80',
@@ -352,4 +374,28 @@ export const yellowThemeDark = {
     expimg: expYellow,
     contactsimg: contactsYellow
 }
+
+export const peachThemeLight = {
+    type: 'light',
+    primary: '#ffdab9',
+    primary400: '#ffefd5',
+    primary600: '#3644c9',
+    primary80: '#545fc4cc',
+    primary50: '#545fc480',
+    primary30: '#545fc44d',
+    secondary: '#eaeaea',
+    secondary70: '#eaeaeab3',
+    secondary50: '#eaeaea80',
+    tertiary: '#212121',
+    tertiary80: '#212121cc',
+    tertiary70: '#212121b3',
+    tertiary50: '#21212180',
+    aboutimg1: blueThemeboy,
+    aboutimg2: blueThemegirl,
+    eduimg: eduBlue,
+    expimg: expBlue,
+    contactsimg: contactsBlue
+}
+
+
 
